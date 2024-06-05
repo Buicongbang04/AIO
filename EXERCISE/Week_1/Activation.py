@@ -10,7 +10,7 @@ def relu(x):
 
 
 def elu(x, a=0.01):
-    return np.where(x > 0, x, a * np.exp(x) - 1)
+    return np.where(x > 0, x, a * (np.exp(x) - 1))
 
 
 def is_number(x):
