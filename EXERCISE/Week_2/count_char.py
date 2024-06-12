@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def countChar(string: str) -> dict:
+def count_char(string: str) -> dict:
     char_dict = {}
     for ch in string:
         if ch in char_dict:
@@ -13,8 +13,8 @@ def countChar(string: str) -> dict:
 
 if __name__ == "__main__":
     string = "Hello, World!"
-    print(countChar(string))
+    print(count_char(string))
     string = "Python is fun!"
-    print(countChar(string))
+    print(count_char(string))
     string = "Happiness"
-    print(countChar(string))
+    print(count_char(string))
