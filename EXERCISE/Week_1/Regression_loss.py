@@ -34,21 +34,21 @@ def display(loss_name, sample, pred, target, loss_value):
 
 
 def mae(n, yi, yhat):
-    sum = 0
-    for i in range(0, n):
-        sum += abs(yi - yhat)
-    return sum / n
+    sum_ = 0
+    for _ in range(0, n):
+        sum_ += abs(yi - yhat)
+    return sum_ / n
 
 
 def mse(n, yi, yhat):
-    sum = 0
-    for i in range(0, n):
-        sum += (yi - yhat)**2
-    return sum / n
+    sum_ = 0
+    for _ in range(0, n):
+        sum_ += (yi - yhat)**2
+    return sum_ / n
 
 
 def rmse(n, yi, yhat):
-    sum = 0
-    for i in range(0, n):
-        sum += (yi - yhat)**2
-    return pow(sum / n, 0.5)
+    sum_ = 0
+    for _ in range(0, n):
+        sum_ += (yi - yhat)**2
+    return pow(sum_ / n, 0.5)

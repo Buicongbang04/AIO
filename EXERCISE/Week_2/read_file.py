@@ -1,4 +1,4 @@
-def wordCount(url: str):
+def word_count(url: str):
     result = dict()
     with open(url, 'r') as file:
         data = file.read()
@@ -11,4 +11,4 @@ def wordCount(url: str):
 
 
 if __name__ == '__main__':
-    print(wordCount('D:\Study\AI-Book\AIO\EXERCISE\Week_2\data\P1_data.txt'))
+    print(word_count('D:\Study\AI-Book\AIO\EXERCISE\Week_2\data\P1_data.txt'))

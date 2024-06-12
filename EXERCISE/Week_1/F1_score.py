@@ -1,10 +1,10 @@
 def f1_score(tp, fp, fn):
     try:
-        if type(tp) != int:
+        if type(tp) is not int:
             raise TypeError("tp must be an integer")
-        elif type(fp) != int:
+        elif type(fp) is not int:
             raise TypeError("fp must be an integer")
-        elif type(fn) != int:
+        elif not type(fn).isinstance(int):
             raise TypeError("fn must be an integer")
 
         if tp <= 0 or fp <= 0 or fn <= 0:
